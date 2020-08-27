@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Layout</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
+   
+<style>
+  
+  #main{
+      padding-left: 170px;
+  }
+  #main .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 250px;
+  
+ 
+}
+
+.container {
+  padding: 2px 16px;
+}  
+#main ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+#main ul li{
+    margin-bottom: 40px;
+    width: 33.33%;
+    height: 230px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+</style>
+</head>
+<body>
+
+
+    <div id="main">
+        <ul style="list-style: none;">
+            <li>
+    <div class="card">
+      <img src="images/female.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <div id="id01"></div>
+      </div>
+    </div>
+    </li>
+    <li>
+    <div class="card">
+        <img src="images/female.png" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div id="id01"></div>
+        </div>
+      </div>
+    </li>
+      <li>
+    <div class="card">
+        <img src="images/female.png" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div id="id01"></div>
+        </div>
+      </div>
+    </li>
+    </ul>
+   
+    
+          <ul style="list-style: none;">
+            <li>
+    <div class="card">
+      <img src="images/female.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <div id="id01"></div>
+      </div>
+    </div>
+    </li>
+    <li>
+    <div class="card">
+        <img src="images/female.png" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div id="id01"></div>
+        </div>
+      </div>
+    </li>
+      <li>
+    <div class="card">
+        <img src="images/female.png" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div id="id01"></div>
+        </div>
+      </div>
+    </li>
+    </ul>
+   
+    
+  
+        <ul style="list-style: none;">
+            <li>
+    <div class="card">
+      <img src="images/female.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <div id="id01"></div>
+      </div>
+    </div>
+    </li>
+    <li>
+    <div class="card">
+        <img src="images/female.png" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div id="id01"></div>
+        </div>
+      </div>
+    </li>
+      <li>
+    <div class="card">
+        <img src="images/female.png" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div id="id01"></div>
+        </div>
+      </div>
+    </li>
+    </ul>
+   
+    
+    
+        <ul style="list-style: none;">
+            <li>
+    <div class="card">
+      <img src="images/female.png" alt="Avatar" style="width:100%">
+      <div class="container">
+        <div id="id01"></div>
+      </div>
+    </div>
+    </li>
+    <li>
+    <div class="card">
+        <img src="images/female.png" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div id="id01"></div>
+        </div>
+      </div>
+    </li>
+      <li>
+    <div class="card">
+        <img src="images/female.png" alt="Avatar" style="width:100%">
+        <div class="container">
+            <div id="id01"></div>
+        </div>
+      </div>
+    </li>
+    </ul>
+    </div>
+    </body>
+<script>
+   var employee = [
+   {  
+        "name":       "sonoo",   
+       "id":"123456",
+       "skills":"html",
+       "project":"cdb",
+       "hcm":"abc"
+    }  ,
+    {  
+        "name":       "sonoo",   
+       "id":"123456",
+       "skills":"html",
+       "project":"cdb",
+       "hcm":"abc"
+    },
+    {  
+        "name":       "sonoo",   
+       "id":"123456",
+       "skills":"html",
+       "project":"cdb",
+       "hcm":"abc"
+    }  ,
+    {  
+        "name":       "sonoo",   
+       "id":"123456",
+       "skills":"html",
+       "project":"cdb",
+       "hcm":"abc"
+    }  ,
+    {  
+        "name":       "sonoo",   
+       "id":"123456",
+       "skills":"html",
+       "project":"cdb",
+       "hcm":"abc"
+    }  ,
+    {  
+        "name":       "sonoo",   
+       "id":"123456",
+       "skills":"html",
+       "project":"cdb",
+       "hcm":"abc"
+    }  ,
+    {  
+        "name":       "sonoo",   
+       "id":"123456",
+       "skills":"html",
+       "project":"cdb",
+       "hcm":"abc"
+    }  ,
+    {  
+        "name":       "sonoo",   
+       "id":"123456",
+       "skills":"html",
+       "project":"cdb",
+       "hcm":"abc"
+    }  ,
+    {  
+        "name":       "sonoo",   
+       "id":"123456",
+       "skills":"html",
+       "project":"cdb",
+       "hcm":"abc"
+    }  
+];
+
+myFunction(employee);
+
+function myFunction(emp) {
+  var out = "";
+  var i;
+  for(i = 0; i < emp.length; i++) {
+    out +=   ' <h2><b>' + emp[i].name + '</b></h2> ' + 
+    emp[i].id + '<p>'+emp[i].skills+'</p>'+'<p>'+emp[i].project+'</p>';
+  }
+  document.getElementById("id01").innerHTML = out;
+}
+
+    </script>
+
+
+</html>  
